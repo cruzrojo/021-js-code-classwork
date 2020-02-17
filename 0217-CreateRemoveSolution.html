@@ -3,9 +3,7 @@
 
 <head>
   <meta charset='UTF-8'>
-  <title>2/17/2020 - Add/Remove Bullet Points.0
-
-  </title>
+  <title></title>
 
   <style>
     .todoItem:hover {
@@ -33,14 +31,17 @@
 </body>
 
 <script>
-let myToDoItem = document.querySelectorAll(".todoItem");
-const myClick = document.getElementsByTagName('li')
-debugger
-myClick.addEventListener('mouseover', (e) => {
-  e.target.style.borderRight = '40px solid red'
-});
-// myClick.forEach(post => post.remove())
+  const todos = document.querySelectorAll('.todoItem');
+  const completedTodos = document.querySelector('.completed');
+  const completedTodoWrapper = document.querySelector('.completedTodoWrapper');
 
+  todos.forEach(todo => todo.addEventListener('click', (event) => {
+    let completedTodo = document.createElement('li');
+    let todoContent = document.createTextNode(todo.textContent);
+    completedTodo.appendChild(todoContent);
+    completedTodoWrapper.insertBefore(completedTodo, completedTodos);
+    todo.remove();
+  }))
 </script>
 
 </html>
