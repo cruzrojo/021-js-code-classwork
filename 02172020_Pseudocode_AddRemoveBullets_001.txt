@@ -1,0 +1,9 @@
+#Pseudocode for the Add/Remove Bullet Points
+
+1. create code that will hold a bullet point. x
+2. create code that will remove a bullet point.
+3. create code that will create a bullet point with the same text in another div 
+4. create code that recognizes when the mouse is over the text in the bullet point. x
+5. create code that recognizes when the mouse clicks on the text of the bullet point to move it into the completed category
+6. create code that creates a function that ties all these things together.
+7. CELEBRATE!!!
